@@ -484,6 +484,8 @@ footer .content strong {
     .centerbox1200  {padding: 0 50px;}    
 }
 @media screen and (max-width:1260px){
+    header nav {display: none;}
+
     #section1 .img_box {flex-direction: column;}
     #section1 .img_box .big_img {width: auto;}
     #section1 .img_box .small_img {width: auto; height: auto;}
@@ -501,7 +503,7 @@ footer .content strong {
 
 @media screen and (max-width: 768px)/* = 0~768사이즈 일때만 어떻게 보일건지 */ {
     .centerbox1200  {padding: 0 20px;}
-    header nav {display: none;}
+    
     #visual .textbox strong {font-size: 90px;}
     #visual .textbox span {font-size: 28px;}
     #visual .textbox p {font-size: 24px;}
