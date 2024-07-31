@@ -484,6 +484,8 @@ footer .content strong {
     .centerbox1200  {padding: 0 50px;}    
 }
 @media screen and (max-width:1260px){
+    header nav {display: none;}
+
     #section1 .img_box {flex-direction: column;}
     #section1 .img_box .big_img {width: auto;}
     #section1 .img_box .small_img {width: auto; height: auto;}
@@ -501,14 +503,14 @@ footer .content strong {
 
 @media screen and (max-width: 768px)/* = 0~768사이즈 일때만 어떻게 보일건지 */ {
     .centerbox1200  {padding: 0 20px;}
-    header nav {display: none;}
+    
     #visual .textbox strong {font-size: 90px;}
     #visual .textbox span {font-size: 28px;}
     #visual .textbox p {font-size: 24px;}
 
-    #section1  {padding: 13vw;}
-    #section2  {padding: 13vw;}
-    #section3  {padding: 13vw;}
+    #section1  {padding: 15px;}
+    #section2  {padding: 15px;}
+    #section3  {padding: 15px;}
 
     #section1 h2  {font-size: 30px;}
 
@@ -534,8 +536,22 @@ footer .content strong {
     footer .content strong {font-size: 16px;}
 }
 
-@media screen and (max-width: 440px){
-    #visual .textbox strong {font-size: 50px;}
-    #visual .textbox span {font-size: 18px;}
+@media screen and (max-width: 509px){
+    header .centerbox1200 h1   {width: 100px; height: 100px; object-fit: cover; }
+
+
+    #visual .textbox strong {font-size: 40px; margin-bottom: 10px;}
+    #visual .textbox span {font-size: 18px; margin-bottom: 10px;}
     #visual .textbox p {font-size: 14px;}
+
+    #section3 .centerbox1200 .content li a   {display: flex; flex-direction: column; justify-content: center; align-items: center;}
+    #section3 .centerbox1200 .content li a .num {font-size: 20px; margin-bottom: 10px; margin-right: 45px; margin-left: 20px;}
+    #section3 .centerbox1200 .content li a .thumb   {width: 150px;height: 150px;margin-right: 45px;margin-left: 20px;}
+    #section3 .centerbox1200 .content li a article  {display: flex; justify-content: center; flex-direction: column;align-items: center; text-align: center;}
+    #section3 .centerbox1200 .content li a article h3   {font-size: 24px;}
+    #section3 .centerbox1200 .content li a article .cont    {font-size: 20px; word-break: keep-all;}
+    #section3 .centerbox1200 .content li a.date  {display: none;}
+    #section3 .centerbox1200 .content li a.name  {display: none;}
+
+    footer .content strong {font-size: 14px;}
 }
