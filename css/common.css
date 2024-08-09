@@ -1,0 +1,312 @@
+@charset "UTF-8";
+
+.centerbox1200 {max-width: 1200px; margin: 0 auto;}
+html { background: #000;} /* =62.5% */
+
+a { color: #fff}
+
+/* gnb */
+.mo_gnb_box {display: none;}
+.mo_gnb_box li { position: relative;}
+.mo_gnb_box li .lnb {display: none;}
+.mo_gnb_box .mo_gnb {overflow: scroll;} 
+ /* overflow:scroll : 화면 밖으로 넘어가면 스크롤 생김  */
+ /* overflow:auto : 화면 밖으로 넘어가면 스크롤 생김  */
+header .mo_gnb_box .mo_gnb li .lnb a { color: #000; background:#dddddd; padding: 20px;border-bottom: 0; font-weight: bold;}
+/* body {cursor: none;}  */
+/* header */
+
+header {
+    position: absolute;
+    width: 100%;
+    /* opacity: 0.5; */
+    z-index: 10;
+    padding: 0;
+    top: 0;
+}
+
+header h1 {
+    width: 120px;
+    height: 120px;
+    margin: 0 auto;
+    margin-top: 50px;
+}
+header nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 0px;
+    padding-top: 0;
+}
+
+header nav .gnb  {
+    display: flex;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+}
+header nav .gnb li  {
+    font-size: 24px;
+    margin: 0;
+    padding: 0;
+    position: relative;
+}  
+header nav .gnb li a {
+    padding: 10px 50px;
+    display: block;
+    height: 100%;
+    margin-bottom: 20px;
+}
+/* header nav .gnb li a:hover {
+    backdrop-filter: blur(10px);
+    box-shadow: 0 20px 20px rgba(34, 34, 34, 0.7);
+    background-color: #000;
+} */
+header nav .gnb li .lnb  {
+    position: absolute;
+    width: 100%;
+    height: 220px;
+    padding: 20px 0;
+    background: black;
+    display: none;
+}
+header nav .gnb li .lnb li  {
+    font-size: 20px;
+}
+header nav .gnb li .lnb li:hover    {
+    background: #4a60d8
+}
+header .spotmenu {
+    display: flex;
+}
+header .spotmenu a {
+    margin-bottom: 20px;
+    padding: 20px 20px ;
+    position: relative;
+    font-size: 18px;
+}
+header .spotmenu a:before   {
+    content: "";
+    position: absolute;
+    width: 1px;
+    height: 12px;
+    background: #888;
+    left: 0;
+    top: 33%;
+    transform: translateY(50%);
+}
+header .spotmenu a:first-child::before  {display: none;}
+
+
+/* footer */
+
+footer {
+    background: linear-gradient(-45deg, #232526, #000);
+    /* background: url(../images/blood.png) no-repeat center border-box; */
+    padding-top: 120px;
+    min-height: 300px;
+}
+
+footer .content {
+    display: flex;
+    gap: 80px;
+    justify-content: center;
+    align-items: center;
+}
+footer .content strong {
+    color: white;
+    font-size: 20px;
+}
+
+/* floating_meun */
+
+.floating_menu {
+    position: fixed;
+    z-index: 10;
+    top: 300px;
+    right: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    padding-left: 50px;
+    width: 100px;
+}
+.floating_menu a    {
+    margin-bottom: 20px;
+    height: 50px;
+    border-radius: 50px;
+    background: linear-gradient(-45deg, #232526, #000);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 10px;
+    width: 50px;
+    box-shadow: 4px 4px 20px rgba(253, 247, 247, 0.2);
+    margin-right: 20px;
+    transition: all 0.5s ease; /* 전환 효과 추가 */
+}
+/* .floating_menu a[htef="section2"]   {} */
+/* .floating_menu:hover a  {
+    margin-right: 20px;
+}   >> 이거 하면 옆으로 들어감 */
+.floating_menu a i   {
+    font-size: 30px;
+    margin-right: 10px;
+    color: #cccccc;
+}
+.floating_menu a span   {
+    max-width: 0;
+    overflow: hidden;
+    white-space: nowrap;
+    transition: 0.7s ease; /* 전환 효과 추가 */
+    font-family: 'Tenada';
+}
+.floating_menu a:hover  {
+    padding: 0 10px;
+    width: 150px; 
+}
+
+.floating_menu a:hover i {
+    margin-right: 10px;
+}
+.floating_menu a:hover span {
+    max-width: 150px;
+} 
+.floating_menu a.on {
+    padding: 0 10px;
+    width: 150px;
+}
+.floating_menu a.on i {
+    margin-right: 10px;
+}
+.floating_menu a.on span {
+    max-width: 100px;
+}
+
+.mouse_circle   {
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    background: white;
+    border-radius: 50%;
+    background: url(../images/ghost_1618869.png) no-repeat center center;
+    background-size: cover;
+    z-index: 77;
+    overflow: hidden;
+    pointer-events: none;
+    transition: 0.03s;
+}
+.spotmenu a:hover  {color: #3b90ff;}
+
+
+
+
+
+
+
+/* sub */
+
+.common-style {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 40px;
+    margin-bottom: 20px;
+}
+
+.common-style figure {
+    flex: 1;
+    background: none;
+    overflow: hidden;
+    margin: 0;
+}
+
+.common-style figure img {
+    width: 100%;
+    height: auto;
+}
+
+.common-style .description {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.common-style .description h3 {
+    font-size: 40px;
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center; /* 수직 정렬을 위해 추가 */
+    justify-content: flex-start; /* 왼쪽 정렬 */
+    font-weight: lighter;
+    letter-spacing: 2px; 
+    
+}
+.common-style .description h3 span.normal {
+    top: -10px;
+    position: relative;
+}
+.common-style .description p {
+    font-size: 20px;
+    line-height: 1.8;
+    margin-left: 20px;
+}
+
+/* common-style2 */
+
+.common-style2 {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    text-align: right;
+    gap: 40px;
+    margin-bottom: 20px;
+}
+
+.common-style2 figure {
+    flex: 1;
+    background: none;
+    overflow: hidden;
+    margin: 0;
+}
+
+.common-style2 figure img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.common-style2 .description {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.common-style2 .description h3 {
+    font-size: 40px;
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center; /* 수직 정렬을 위해 추가 */
+    justify-content: flex-end; /* 오른쪽 정렬 */
+    font-weight: lighter;
+    
+}
+.common-style2 .description h3 span.normal {
+    top: -10px;
+    position: relative;
+}
+.common-style2 .description p {
+    font-size: 20px;
+    line-height: 1.8;
+    margin-right: 20px;
+    letter-spacing: 2px;
+}
+
+
+@media screen and (max-width: 1300px) {
+    body {cursor: default;}
+    a:link {cursor: default;}
+    .mouse_circle {display: none;}
+}
