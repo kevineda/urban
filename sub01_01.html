@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>urban</title>
+    <link rel="stylesheet" href="css/style.css">
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+    <!--폰트어썸-->
+    <script src="https://kit.fontawesome.com/f3c9d07c5d.js"></script>
+</head>
+<body>
+    
+    <header class="header_sub">
+         <!-- header.html 자리 -->
+    </header>
+    
+    <div id="visual_sub">
+        <div class="centerbox1200">
+            <div class="sub_text">
+                特展 : 요괴특집
+            </div>
+            <div class="bread">
+                <a href="index.html">Home</a>
+                <span> > </span>
+                <a href="#">Exhibition</a>
+            </div>
+        </div>
+    </div>
+
+    <div id="section_box_sub">
+
+            <h2>About Exhibition
+                <span class="top"></span>
+                <span class="right"></span>
+                <span class="bottom"></span>
+                <span class="left"></span>
+            </h2>
+
+            <nav class="snb">
+                <ul>
+                    <li class="on"><a href="sub01_01.html">전시 소개</a></li>
+                    <li><a href="sub01_02.html">작가 소개</a></li>
+                    <li><a href="sub01_03.html">특별전</a></li>
+                    <li><a href="sub01_04.html">전시회 안내</a></li>
+                    <li><a href="sub01_05.html">오시는길</a></li>
+                </ul>
+                <span class="snb_line"></span>
+            </nav>
+
+            <article class="content exhibition">
+                <div class="centerbox1200">
+                    <div class="text_box">
+                        <span class="ex">특별 전시회 : 요괴특집</span>
+                        <strong>요괴의 신비를 담은<br>
+                            특별 전시회입니다.</strong>
+                        <p>우리는 전통과 현대의 경계를 넘나들며 요괴의
+                           다채로운 세계를 탐험하고자 합니다.
+                           한국의 고유한 요괴들을 소개하며,
+                           그들의 역사와 문화를 되새기는 시간을 제공합니다.
+                               
+                           이번 전시회에서는 다양한 작품들이 전시되며,
+                           각 작품마다 깊은 이야기와 예술적 감각이
+                           담겨있습니다. 전시회를 통해 요괴에 대한 
+                           새로운 시각을 경험하시길 바랍니다.</p>
+                    </div>
+
+                    <div class="img_box">
+                        <figure class="img1">
+                            <img src="images/456.jpg" alt="">
+                        </figure>
+                        <figure class="img2">
+                            <img src="images/123.jpg" alt="">
+                        </figure>
+                    </div>
+                </div>
+            </article>
+        
+    </div>
+
+    <footer>
+      <!-- footer.html 자리 -->
+    </footer>
+
+    <div class="floating_menu">
+        <a href="#visual">
+            <i class="fa-solid fa-chevron-up"></i>
+            <span>맨위로가시죠</span>
+        </a>
+        <a href="#section1">
+            <i class="fa-solid fa-ghost"></i>
+            <span>EXHIBITION</span>
+        </a>
+        <a href="#section2">
+            <i class="fa-regular fa-image"></i>
+            <span>GALLERY</span>
+        </a>
+        <a href="#section3">
+            <i class="fa-solid fa-book-open"></i>
+            <span>EDUCATION</span>
+        </a>
+        
+    </div>
+    
+
+
+
+    
+    <script src="script/jquery-3.7.1.js"></script>
+    <script src="script/action.js"></script>
+    
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+    var swiper = new Swiper(".section2Slide", {
+        slidesPerView: 3,
+        spaceBetween: 10,
+        keyboard: {
+        enabled: true,
+        },
+        pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+        },
+        navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+        },
+        breakpoints: {
+        769: {
+          slidesPerView: 2,  //브라우저가 768보다 클 때
+          spaceBetween: 40,
+        },
+        1024: {
+          slidesPerView: 3,  //브라우저가 1024보다 클 때
+          spaceBetween: 50,
+        },
+      },
+    });
+    </script>
+</body>
+</html>

@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html class="pro" lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>urban</title>
+    <link rel="stylesheet" href="css/style.css">
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+    <!--폰트어썸-->
+    <script src="https://kit.fontawesome.com/f3c9d07c5d.js"></script>
+</head>
+<body>
+    
+    <header class="header_sub">
+         <!-- header.html 자리 -->
+    </header>
+    `
+    <div id="visual_login">
+        <div class="centerbox1200">
+            <div class="sub_text" data-Splitting>
+                회원서비스
+            </div>
+            <div class="bread">
+                <a href="index.html">Home</a>
+                <span> > </span>
+                <a href="#">profile</a>
+            </div>
+        </div>
+    </div>
+
+    <div id="section_box_sub">
+
+            <h2>Profile
+                <span class="top"></span>
+                <span class="right"></span>
+                <span class="bottom"></span>
+                <span class="left"></span>
+            </h2>
+
+            <div class="snb">
+                <ul>
+                    <li><a href="login.html">로그인</a></li>
+                    
+                    <li class="on">
+                        <a href="#">내 정보</a>
+                    </li>
+                </ul>
+                <span class="snb_line"></span>
+            </div>
+
+
+            <article class="content login_page">
+                <div class="centerbox1200">
+                    <form action="">
+                        <fieldset>
+                            <legend>로그인</legend>
+                            <div class="login_box">
+                                
+                   <h3>URBAN에 오신 것을 환영합니다. <br> <span>로그인 하시면 Urban 홈페이지의 다양한 서비스를 이용할 수 있습니다.</span></h3>
+                                <ul>
+                                    <li class="idcheck">
+                                        <input type="text" placeholder="아이디를 입력해주세요" required name="">
+                                    </li>
+                                    <li>
+                                        <input type="password" placeholder="비밀번호를 입력해주세요" required name="">
+                                        <div class="view_pw"><img src="images/눈뜬거.png" alt="비밀번호보기"></div>
+                                        <div class="hide_pw"><img src="images/눈감은거.png" alt="비밀번호숨기기"></div>
+                                    </li>
+                                    <li class="idcheck">
+                                        <input type="checkbox" id="check_id">
+
+                                        <label for="check_id">
+                                            <span class="check">
+                                                <i class="fa-solid fa-check"></i>
+                                            </span>
+                                        </label>
+                                        
+                                        <label for="check_id">아이디 기억하기</label>
+                                    </li>
+                                </ul>
+                                    <button type="submit">로그인</button>
+                                <div class="link_box">
+                                    <a href="join.html">회원가입</a>
+                                    <a href="#">비밀번호찾기</a>
+                                </div>
+                            </div>
+                            <legend>간편로그인</legend>
+                            <div class="login_box2">
+                                <h3>SNS계정을 통해 <br>
+                                    <span>로그인 할 수 있습니다.</span></h3>
+                                    <ul class="icon">
+                                        <li>
+                                            <a href="#"><i class="fa-brands fa-facebook fa-beat" style="color: #fff;"></i></a>
+                                        </li>
+                                        <li>
+                                            <a href="#"><i class="fa-brands fa-instagram fa-beat" style="color: #fff;"></i></a>
+                                        </li>
+                                        <li>
+                                            <a href="#"><i class="fa-brands fa-google fa-beat" style="color: #fff;"></i></a>
+                                        </li>
+                                    </ul>
+                                    <div class="login_text_box">
+                                        <strong>URBAN 홈페이지에 가입하시면 <br>다음 혜택을 받을 수 있습니다.</strong>
+                                        <p>URBAN의 교육, 행사, 전시 등의 메일링 서비스가 제공됩니다. <br>
+                                            소장품, 출판물, 기타 자료 정보의 습득이 쉽습니다. <br>
+                                            마이페이지를 통해 회원님의 맞춤정보를 제공합니다. <br>
+                                            로그인 후 사용하는 서비스에 별도로 개인정보를 입력하실 필요가 없습니다.</p>
+                                    </div>
+                            </div>  
+                        </fieldset>
+                    </form>
+                </div>
+            </article>
+    </div>
+
+    <footer>
+      <!-- footer.html 자리 -->
+    </footer>
+
+    <div class="floating_menu">
+        <a href="#visual">
+            <i class="fa-solid fa-chevron-up"></i>
+            <span>맨위로가시죠</span>
+        </a>
+        <a href="#section1">
+            <i class="fa-solid fa-ghost"></i>
+            <span>EXHIBITION</span>
+        </a>
+        <a href="#section2">
+            <i class="fa-regular fa-image"></i>
+            <span>GALLERY</span>
+        </a>
+        <a href="#section3">
+            <i class="fa-solid fa-book-open"></i>
+            <span>EDUCATION</span>
+        </a>
+        
+    </div>
+    
+
+
+
+    
+    <script src="script/jquery-3.7.1.js"></script>
+    <script src="script/action.js"></script>
+    <script src="script/splitting.min.js"></script>
+    <script>
+        Splitting()
+    </script>
+    
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+    var swiper = new Swiper(".section2Slide", {
+        slidesPerView: 3,
+        spaceBetween: 10,
+        keyboard: {
+        enabled: true,
+        },
+        pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+        },
+        navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+        },
+        breakpoints: {
+        769: {
+          slidesPerView: 2,  //브라우저가 768보다 클 때
+          spaceBetween: 40,
+        },
+        1024: {
+          slidesPerView: 3,  //브라우저가 1024보다 클 때
+          spaceBetween: 50,
+        },
+      },
+    });
+    </script>
+</body>
+</html>

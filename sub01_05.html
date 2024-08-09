@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>urban</title>
+    <link rel="stylesheet" href="css/style.css">
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+    <!--폰트어썸-->
+    <script src="https://kit.fontawesome.com/f3c9d07c5d.js"></script>
+</head>
+<body>
+    
+    <header class="header_sub">
+         <!-- header.html 자리 -->
+    </header>
+    
+    <div id="visual_sub">
+        <div class="centerbox1200">
+            <div class="sub_text" data-Splitting>
+                特展 : 요괴특집
+            </div>
+            <div class="bread">
+                <a href="index.html">Home</a>
+                <span> > </span>
+                <a href="#">Exhibition</a>
+            </div>
+        </div>
+    </div>
+
+    <div id="section_box_sub">
+
+            <h2>About Exhibition
+                <span class="top"></span>
+                <span class="right"></span>
+                <span class="bottom"></span>
+                <span class="left"></span>
+            </h2>
+
+            <nav class="snb">
+                <ul>
+                    <li><a href="sub01_01.html">전시 소개</a></li>
+                    <li><a href="sub01_02.html">작가 소개</a></li>
+                    <li><a href="sub01_03.html">특별전</a></li>
+                    <li><a href="sub01_04.html">전시회 안내</a></li>
+                    <li class="on"><a href="sub01_05.html">오시는길</a></li>
+                </ul>
+                <span class="snb_line"></span>
+            </nav>
+
+            <article class="content direction">
+                <div class="centerbox1200">
+                    <div class="direction_box">
+                        <div class="direct_box">
+                            <!--
+                           * 카카오맵 - 약도서비스
+                           * 한 페이지 내에 약도를 2개 이상 넣을 경우에는
+                           * 약도의 수 만큼 소스를 새로 생성, 삽입해야 합니다.
+                            -->
+                                <!-- 1. 약도 노드 -->
+                                <div id="daumRoughmapContainer1722996537344" class="root_daum_roughmap root_daum_roughmap_landing"
+                                style="width: 100%;"></div>
+        
+                            <!-- 2. 설치 스크립트 -->
+                            <script charset="UTF-8" class="daum_roughmap_loader_script" src="https://ssl.daumcdn.net/dmaps/map_js_init/roughmapLoader.js"></script>
+        
+                            <!-- 3. 실행 스크립트 -->
+                            <script charset="UTF-8">
+                           new daum.roughmap.Lander({
+                          "timestamp" : "1722996537344",
+                          "key" : "2ka5i",
+                          "mapWidth" : "",
+                          "mapHeight" : "360"
+                       }).render();
+                        </script>
+                        </div>
+                     </div>
+                    </div>
+            </article>
+        
+    </div>
+
+    <footer>
+      <!-- footer.html 자리 -->
+    </footer>
+
+    <div class="floating_menu">
+        <a href="#visual">
+            <i class="fa-solid fa-chevron-up"></i>
+            <span>맨위로가시죠</span>
+        </a>
+        <a href="#section1">
+            <i class="fa-solid fa-ghost"></i>
+            <span>EXHIBITION</span>
+        </a>
+        <a href="#section2">
+            <i class="fa-regular fa-image"></i>
+            <span>GALLERY</span>
+        </a>
+        <a href="#section3">
+            <i class="fa-solid fa-book-open"></i>
+            <span>EDUCATION</span>
+        </a>
+        
+    </div>
+    
+
+
+
+    
+    <script src="script/jquery-3.7.1.js"></script>
+    <script src="script/action.js"></script>
+    <script src="script/splitting.min.js"></script>
+    <script>
+        Splitting()
+    </script>
+    
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+    var swiper = new Swiper(".section2Slide", {
+        slidesPerView: 3,
+        spaceBetween: 10,
+        keyboard: {
+        enabled: true,
+        },
+        pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+        },
+        navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+        },
+        breakpoints: {
+        769: {
+          slidesPerView: 2,  //브라우저가 768보다 클 때
+          spaceBetween: 40,
+        },
+        1024: {
+          slidesPerView: 3,  //브라우저가 1024보다 클 때
+          spaceBetween: 50,
+        },
+      },
+    });
+    </script>
+</body>
+</html>

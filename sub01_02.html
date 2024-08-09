@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>urban</title>
+    <link rel="stylesheet" href="css/style.css">
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+    <!--폰트어썸-->
+    <script src="https://kit.fontawesome.com/f3c9d07c5d.js"></script>
+</head>
+<body>
+    
+    <header class="header_sub">
+         <!-- header.html 자리 -->
+    </header>
+    
+    <div id="visual_sub">
+        <div class="centerbox1200">
+            <div class="sub_text">
+                特展 : 요괴특집
+            </div>
+            <div class="bread">
+                <a href="index.html">Home</a>
+                <span> > </span>
+                <a href="#">Exhibition</a>
+            </div>
+        </div>
+    </div>
+
+    <div id="section_box_sub">
+
+            <h2>About Exhibition
+                <span class="top"></span>
+                <span class="right"></span>
+                <span class="bottom"></span>
+                <span class="left"></span>
+            </h2>
+
+            <nav class="snb">
+                <ul>
+                    <li><a href="sub01_01.html">전시 소개</a></li>
+                    <li class="on"><a href="sub01_02.html">작가 소개</a></li>
+                    <li><a href="sub01_03.html">특별전</a></li>
+                    <li><a href="sub01_04.html">전시회 안내</a></li>
+                    <li><a href="sub01_05.html">오시는길</a></li>
+                </ul>
+                <span class="snb_line"></span>
+            </nav>
+
+            <article class="content artist">
+                <div class="centerbox1200">
+                    <div class="artist_box">
+                        <div class="artist">
+                            <figure><img src="images/profile.jpg" alt=""></figure>
+                            <span class="ex">박   경   태</span>
+                            <strong>GYEONGTAE PARK <br>1999.08.31~</strong>
+                            <p>박경태 작가는 한국의 전통 설화와 민담을 현대적인 감각으로 재해석하는 작품으로 잘 알려져 있습니다.
+                                그의 작품은 한국의 고유한 신비로움을 세계에 알리는 데 중점을 두고 있으며, 각종 국제 전시회에서 큰 호평을 받고 있습니다.
+                                박 작가는 다양한 매체를 활용하여 이야기를 시각적으로 표현하며, 그의 작품은 깊이 있는 서사와 독특한 미적 감각을 통해 관객들에게
+                                새로운 영감을 제공합니다. 현재 그는 한국과 해외를 오가며 활발히 활동 중입니다.</p>
+                        </div>
+                    </div>
+                </div>
+            </article>
+        
+    </div>
+
+    <footer>
+      <!-- footer.html 자리 -->
+    </footer>
+
+    <div class="floating_menu">
+        <a href="#visual">
+            <i class="fa-solid fa-chevron-up"></i>
+            <span>맨위로가시죠</span>
+        </a>
+        <a href="#section1">
+            <i class="fa-solid fa-ghost"></i>
+            <span>EXHIBITION</span>
+        </a>
+        <a href="#section2">
+            <i class="fa-regular fa-image"></i>
+            <span>GALLERY</span>
+        </a>
+        <a href="#section3">
+            <i class="fa-solid fa-book-open"></i>
+            <span>EDUCATION</span>
+        </a>
+        
+    </div>
+    
+
+
+
+    
+    <script src="script/jquery-3.7.1.js"></script>
+    <script src="script/action.js"></script>
+    
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+    var swiper = new Swiper(".section2Slide", {
+        slidesPerView: 3,
+        spaceBetween: 10,
+        keyboard: {
+        enabled: true,
+        },
+        pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+        },
+        navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+        },
+        breakpoints: {
+        769: {
+          slidesPerView: 2,  //브라우저가 768보다 클 때
+          spaceBetween: 40,
+        },
+        1024: {
+          slidesPerView: 3,  //브라우저가 1024보다 클 때
+          spaceBetween: 50,
+        },
+      },
+    });
+    </script>
+</body>
+</html>
