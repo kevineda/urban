@@ -137,6 +137,7 @@ header .header_sub nav .gnb > li >a {color: white;}
 #section_box_sub .content {
     padding: 6.25vw 0;
     color: #fff;
+    width: 100%;
 }
 
 #section_box_sub .centerbox1200   {
@@ -493,19 +494,18 @@ header .header_sub nav .gnb > li >a {color: white;}
 .login_page .login_box li.idcheck label {font-family: 'TheJamsil3Regular'; color: #000;}
 .login_page .login_box li input[type="checkbox"] {width: 20px;height: 20px; display: none;}
 
-.login_page .login_box button[type="submit"] {padding: 15px 75px; background: #4a60d8; border-radius: 50px; color: #fff; font-size: 16px; margin-top: 50px;font-family: 'TheJamsil3Regular';}
+.btn1 {padding: 15px 75px; background: #4a60d8; border-radius: 50px; color: #fff; font-size: 16px; margin-top: 50px;font-family: 'TheJamsil3Regular';}
 .login_page .login_box .link_box {height: 50px; display: flex;align-items: center; gap: 40px; }
 
 .login_page .login_box .link_box a {position: relative; font-family: 'TheJamsil3Regular'; color: #000;}
 /* .login_page .login_box .link_box a:before {content: ""; width: 4px; height: 4px; border-radius: 50%; background: #ddd; position: absolute; left: -10px; top: 40%;} */
 
 .login_page .login_box li span.check {
-    display: inline-block;
     width: 24px;
     height: 24px;
     border-radius: 50%;
     border: 1px solid #aaa;
-    display: flex;
+    display: inline-flex;
     justify-content: center;
     align-items: center;
     color: #aaa;
@@ -536,6 +536,237 @@ width: 350px;}
 .login_page .login_box2 .login_text_box p {font-size: 14px; font-family: 'TheJamsil1Thin'; color: #aaa; line-height: 1.5;}
 
 
+
+
+/* 회원가입 */
+
+.join_page {width: 100%;}
+.join_page .centerbox1200 {justify-content: center;}
+.join_page .centerbox1200 form {width: 800px;}
+.join_page .join_box button {color: #fff;}
+.join_page .join_box li {display: flex; align-items: center; margin-top: 30px;} 
+.join_page .join_box li label {width: 200px; font-family: 'TheJamsil3Regular'; flex-shrink: 0;}
+.join_page .join_box li label.pilsu::after {
+    content: "'"; color: red; margin-left: 5px;
+}
+
+
+.join_page .join_box li .input_wrap {flex-grow: 1; }
+
+.join_page .join_box li input:not([type="file"]) {width: 100%; border: 1px solid #ddd; border-radius: 50px; font-size: 18px; text-indent: 20px; height: 50px; font-family: 'TheJamsil3Regular';}
+.join_page .join_box li input[type="radio"] {width: 20px; height: 20px;}
+.join_page .join_box .btn_box {display: flex; justify-content: center;}
+.join_page .join_box .gender {display: flex; gap: 20px;}
+.join_page .join_box .input_wrap label {width: auto; display: inline-flex; gap: 10px; align-items: center; margin-right: 20px;}
+
+.join_page .join_box li input[type="checkbox"] {width: 20px; height: 20px; margin-right: 15px; align-items: center; }
+
+
+.join_page .join_box li input[type="file"] {display: none;}
+.join_page .join_box li input[type="file"] ~ label {
+    border-radius: 50px; padding: 0 30px; background: #3a4db8; color: white; height: 50px;
+}
+
+
+.join_page .join_box li .member_rule {border: 1px solid #ddd; border-radius: 0px; white-space: pre-wrap; height: 300px; position: relative; overflow: hidden; width: 100%; font-size: 0;}
+.join_page .join_box li .member_rule .rule {overflow: auto; height: 100%; position: absolute; width: 100%; top: 0;left: 0;padding: 12px 16px; font-size: 16px; box-sizing: border-box; font-family: 'TheJamsil1Thin';}
+
+  /* 스크롤바의 폭 너비 */
+  .rule::-webkit-scrollbar {
+      width: 5px;  
+  }
+  
+  .rule::-webkit-scrollbar-thumb {
+      background: rgb(255, 255, 255); /* 스크롤바 색상 */
+      border-radius: 10px; /* 스크롤바 둥근 테두리 */
+  }
+  
+  .rule::-webkit-scrollbar-track {
+      background: rgba(255, 255, 255, 0.2);  /*스크롤바 뒷 배경 색상*/
+  }
+
+
+  .join_page .join_box li .member_rule textarea {height: 100%; width: 100%; top: 0;left: 0; padding: 12px 16px; font-size: 16px; box-sizing: border-box; font-family: 'TheJamsil1Thin';}
+
+
+/* 뉴스 */
+
+#visual_news    {
+    height: 180px;
+    background:url(../images/fhrmdls.png) no-repeat center center;
+    margin-top: 250px;
+}
+#visual_news .centerbox1200 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    height: 100%;
+}
+.centerbox1200 .sub_text {transform: translate(0,0px) skewY(0deg); overflow: hidden; animation: textAni 1.8s;}
+@keyframes textAni {
+    0% {opacity: 0;}
+    30% {opacity: 0;transform: translate(0,-90px) skewY(-10deg); }
+    100% {opacity: 1;transform: translate(0,0px) skewY(0deg); }
+}
+#visual_news .sub_text   {
+    color: #fff;
+    font-size: 50px;
+    letter-spacing: 10px;
+}
+#visual_news .bread   {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    gap: 25px;
+}
+#visual_news .bread span   {
+    color:white;
+}
+.board .board_box {width: 100%;}
+.board .board_top {
+    display: flex;
+    justify-content: space-between;
+}
+.board .board_top .search {
+    height: 50px;
+    border: 1px solid #ccc;
+    display: flex;
+}
+
+.board .board_top .search input {
+    border: none;
+    width: 100%;
+    height: 100%;
+    font-size: 16px;
+    text-indent: 10px;
+}
+
+.board .board_top .search button {
+    font-size: 20px;
+    width: 50px;
+    color: white;
+} 
+.board_top a {margin: 0;}
+.board_top .btn1 {padding: 15px 75px; background: #4a60d8; border-radius: 50px; color: #fff; font-size: 16px; font-family: 'TheJamsil3Regular';}
+
+/* pagination */
+
+.board .pagination {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    margin-top: 6vw; 
+}
+.board .pagination .page_num {
+    display: flex;
+}
+.board .pagination .page_num li {
+    font-size: 18px;
+    font-family: 'TheJamsil3Regular';
+    width: 40px;
+    height: 40px;
+}
+.board .pagination .page_num li.on {background: #4a60d8; border-radius: 50%;}
+.board .pagination .page_num li a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+.board .pagination .btn_page {
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.board .pagination .btn_page.off {
+    color: #a8a8a8;
+}
+
+/* 목록 */
+.board_list { font-family: 'TheJamsil2Light'; margin-top: 6vw;}
+.board .title_line {width: 100%; height: 60px;  background: teal; color: #fff; display: flex; align-items: center; font-weight: bold;}
+.board .title_line li {width: 120px; text-align: center;min-width: 100px}
+.board .title_line li.subject {flex-grow: 1;width: 800px;}
+
+.board .content_box li {height: 60px; font-size: 18px;}
+.board .content_box li a {display: flex; text-align: center; height: 100%; align-items: center; }
+.board .content_box li a .num {width: 120px; min-width: 100px }
+.board .content_box li a em {width: 120px; font-style: normal; min-width: 100px;}
+.board .content_box li a .name {width: 120px; min-width: 100px}
+.board .content_box li a .date {width: 120px; min-width: 100px}
+.board .content_box li a .reply_icon {width: 120px; height: 100%; display: flex; align-items: center; justify-content: center; min-width: 100px; font-family: 'TheJamsil3Regular';}
+.board .content_box li a .reply_icon .reply_wait {background: teal; padding:8px 15px; border-radius: 30px;color: #fff;}
+.board .content_box li a .reply_icon .reply_ok {background: #111; padding:8px 15px; border-radius: 30px; color: #fff;}
+.board .content_box li a h5 {flex-grow: 1; text-align: left; font-size: 18px; font-weight: normal; text-indent: 30px; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; width: 800px;}
+
+/* 문의 쓰는 페이지 */
+.board_box {font-family: 'TheJamsil3Regular';}
+.board_box h4   {margin-bottom: 10px;}
+.board_write ul   {display: flex; flex-wrap: wrap; gap: 24px 40px;}
+.board_write ul li {width: 100%;}
+.board_write ul li.half {width: 40%; flex-grow: 1;}
+.board_write ul li .cont  {display: flex;}
+.board_write ul li .cont .radio_box  {display: flex; width: 250px; align-items: center;}
+.board_write ul li .cont .radio_box label {display: flex; align-items: center; gap: 8px;}
+
+.board_write ul li textarea {height: 200px;}
+.board_write .check_box {margin: 20px 0;}
+.board_write .check_box label {display: flex; align-items: center; gap: 10px;}
+.board_write .btn_box {display: flex; justify-content: center;}
+
+
+/* 게시판보기 */
+
+.board_view .top {padding: 15px; border-top: 1px solid #ccc;}
+.board_view .top .tit {
+    font-size: 20px;
+    font-family: 'TheJamsil5Bold';
+}
+.board_view .top .info {
+    margin-top: 10px;
+}
+.board_view .top .info .q_kind {
+    margin-right: 8px;
+    color: #4a60d8;
+}
+.board_view .top .info .date {
+    color: snow;
+}
+
+.board_view .textarea_box {
+    border: 1px solid #ddd;
+    padding: 2.5vw;
+    line-height: 1.4;
+    color: #ccc;
+}
+.board_view .textarea_box p {
+    line-height: 1.4;
+    color: #aaa;
+}
+
+.board_view .admin_reply {
+    border: 1px solid #ddd;
+    padding: 2.5vw;
+    margin-top: 15px;
+    background: #f9f9f9;
+    position: relative;
+}
+.board_view .admin_reply::before {content: ""; position: absolute; width: 10px;height: 10px; background: #4a60d8; left: 0; top: 0;}
+
+.board_view .admin_reply p {
+    line-height: 1.4;
+    color: black;
+}
+
+.board_view .btn1 {padding: 15px 75px; background: #4a60d8; border-radius: 50px; color: #fff; font-size: 16px; font-family: 'TheJamsil3Regular'; margin-top: 50px; display: inline-block;}
+
 @media screen and (max-width: 1300px) {
     
     #visual_sub .bread {display: none;}
@@ -548,6 +779,18 @@ width: 350px;}
     .exhibition .img_box figure.img2  {width: 500px; height: 500px;}
 }
 
+@media screen and (max-width: 880px) {
+    
+    .board .title_line li {min-width: 100px}
+  
+  
+    .board .content_box li a .num { min-width: 100px }
+    .board .content_box li a em {min-width: 100px;}
+    .board .content_box li a .name { min-width: 100px}
+    .board .content_box li a .date { min-width: 100px}
+    .board .content_box li a .reply_icon {min-width: 100px;}
+  }
+  
 @media screen and (max-width: 768px) {
     
     #visual_sub .sub_text  {font-size: 40px; background:url(../images/sub_visual.jpg) cover; }
@@ -565,6 +808,30 @@ width: 350px;}
 
     .exhibition .text_box strong {font-size: 30px;}
     .exhibition .text_box p {font-size: 16px;}
+
+    /* login */
+    .login_page form {width: 80%;}
+    .login_page .login_box {width: 100%;}
+
+    .login_page .login_box ul li input[type="text"],
+    .login_page .login_box ul li input[type="password"] {width: 100%;}
+
+    /* join */
+    .join_page .join_box li label {width: 120px;}
+
+    /* board */
+        .board .title_line {display: none;}
+        .board .content_box {border-top: 1px solid #999;}
+        .board .content_box li {padding: 10px 0; border-bottom: 1px solid #555; height: auto;}
+        .board .content_box li a {flex-wrap: wrap;}
+        .board .content_box li a .num {display: none;}
+        .board .content_box li a em {order:2; min-width: auto; width: auto; padding: 0 10px;}
+        .board .content_box li a .name { order:3; min-width: auto; width: auto; padding: 0 10px;}
+        .board .content_box li a .date { order:4; min-width: auto; width: auto; padding: 0 10px;}
+        .board .content_box li a h5 {order:1 ; width: 100%; flex-shrink: 0; text-indent: 10px;}
+        .board .content_box li a .reply_icon {order:5;flex-grow: 1;justify-content: flex-end;}
+
+        .board_write ul li.half {width: 100%;}
 }
 
 
@@ -577,4 +844,16 @@ width: 350px;}
 
     .exhibition .img_box figure.img1 {display: none;}
     .exhibition .img_box figure.img2 {width: 100vw - 40px; height: 500px}
+
+     /* join */
+     .join_page .join_box li {flex-direction: column; }
+     .join_page .join_box li label {width: 100%; margin-bottom: 20px;}
+     .join_page .join_box li .input_wrap {width: 100%;}
+
+     /* board */
+     .board .board_top {flex-direction: column;}
+     .board .board_top .search {margin-bottom: 20px;}
+     .board_top .btn1 {padding: 15px 75px; background: #4a60d8; border-radius: 50px; color: #fff; font-size: 16px; font-family: 'TheJamsil3Regular'; text-align: center;}
+
+     .board_view .top {padding: 10px;}
 }

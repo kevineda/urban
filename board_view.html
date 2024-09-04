@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>urban</title>
+    <link rel="stylesheet" href="css/style.css">
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+    <!--폰트어썸-->
+    <script src="https://kit.fontawesome.com/f3c9d07c5d.js"></script>
+</head>
+<body>
+    
+    <header class="header_sub">
+         <!-- header.html 자리 -->
+    </header>
+    
+    <div id="visual_news">
+        <div class="centerbox1200">
+            <div class="sub_text" data-Splitting>
+                회원게시판
+            </div>
+            <div class="bread">
+              
+            </div>
+        </div>
+    </div>
+
+    <div id="section_box_sub">
+
+            <h2>NEWS
+                <span class="top"></span>
+                <span class="right"></span>
+                <span class="bottom"></span>
+                <span class="left"></span>
+            </h2>
+
+            <nav class="snb">
+               <div class="centerbox1200">
+                <ul>
+                    <li><a href="board_list.html">고객문의</a></li>
+                    <li><a href="board_qna.html">질문/답변</a></li>
+                    <li><a href="board_free.html">자유게시판</a></li>
+                   
+                </ul>
+               </div>
+                <span class="snb_line"></span>
+            </nav>
+
+            <article class="content board news">
+               <div class="centerbox1200">
+                    <div class="board_box board_view">
+                        <ul class="top">
+                            <li class="tit">주문내역 혹은 영수증 확인</li>
+                            <li class="info">
+                                <span class="q_kind">일반문의</span>
+                                <span class="date">2024.07.29</span>
+                            </li>
+                        </ul>
+
+                        <div class="textarea_box">
+                            <p>
+                                문의드립니다 문의드립니다문의드립니다문의드립니다문의드립니다문의드립니다문의드립니다문의드립니다문의드립니다문의드립니다문의드립니다문의드립니다 드립니드립니드립니드립니드립니드립니드립니드립니드립니드립니드립니드립니드립니드립니드립니드립니드립니드립니드립니드립니드립니드립니드립니드립니드립니
+                            </p>
+                        </div>
+
+                        <div class="admin_reply">
+                            <p>[운영자 답변]  문의드립니다문의드립니다문의드립니다문의드립니다문의드립니다문의드립니다문의드립니다문의드립니다문의드립니다문의드립니다</p>
+                        </div>
+
+                        <a href="#" class="btn1">목록</a>
+                    </div>
+               </div>
+            </article>
+        
+    </div>
+
+    <footer>
+      <!-- footer.html 자리 -->
+    </footer>
+
+    <div class="floating_menu">
+        <a href="#visual">
+            <i class="fa-solid fa-chevron-up"></i>
+            <span>맨위로가시죠</span>
+        </a>
+        <a href="#section1">
+            <i class="fa-solid fa-ghost"></i>
+            <span>EXHIBITION</span>
+        </a>
+        <a href="#section2">
+            <i class="fa-regular fa-image"></i>
+            <span>GALLERY</span>
+        </a>
+        <a href="#section3">
+            <i class="fa-solid fa-book-open"></i>
+            <span>EDUCATION</span>
+        </a>
+        
+    </div>
+    
+
+
+
+    
+    <script src="script/jquery-3.7.1.js"></script>
+    <script src="script/action.js"></script>
+    <script src="script/splitting.min.js"></script>
+    <script>
+        Splitting()
+    </script>
+    
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+    var swiper = new Swiper(".section2Slide", {
+        slidesPerView: 3,
+        spaceBetween: 10,
+        keyboard: {
+        enabled: true,
+        },
+        pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+        },
+        navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+        },
+        breakpoints: {
+        769: {
+          slidesPerView: 2,  //브라우저가 768보다 클 때
+          spaceBetween: 40,
+        },
+        1024: {
+          slidesPerView: 3,  //브라우저가 1024보다 클 때
+          spaceBetween: 50,
+        },
+      },
+    });
+    </script>
+</body>
+</html>
